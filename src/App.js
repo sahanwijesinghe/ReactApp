@@ -5,6 +5,7 @@ import { Student } from './Student';
 import { Classroom } from './Classroom';
 import { Teacher } from './Teacher';
 import { Subject } from './Subject';
+import { AllocateSubjects } from './AllocateSubjects';
 import {BrowserRouter, Route, Switch, NavLink} from 'react-router-dom';
 
 
@@ -22,6 +23,7 @@ function App() {
           <li className="nav-item- m-1"><NavLink className="btn btn-light btn-outline-primary" to="/classroom">Classrooms</NavLink></li>
           <li className="nav-item- m-1"><NavLink className="btn btn-light btn-outline-primary" to="/teacher">Teachers</NavLink></li>
           <li className="nav-item- m-1"><NavLink className="btn btn-light btn-outline-primary" to="/subject">Subject</NavLink></li>
+          <li className="nav-item- m-1"><NavLink className="btn btn-light btn-outline-primary" to="/allocate-subjects">Allocate Subjects</NavLink></li>
         </ul>
 
       </nav>
@@ -32,6 +34,7 @@ function App() {
         <Route path='/classroom' component={Classroom}/>
         <Route path='/teacher' component={Teacher}/>
         <Route path='/subject' component={Subject}/>
+        <Route path='/allocate-subjects' component={AllocateSubjects}/>
 
       </Switch>
 
