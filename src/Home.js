@@ -8,4 +8,4 @@ export class Home extends Component{
             </div>
         )
     }
-}
+}   
